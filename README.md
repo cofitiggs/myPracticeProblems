@@ -20,3 +20,5 @@ Navigating the directory should be fairly intuitive. But, if I do decide to code
   * C#
  
 That's all for now! If you have any questions, please feel free to message me!
+
+EDIT: Some of these may have test cases written into the code, and some may not. They were just for my benefit; you're free to create your own or ignore them as you see fit.
