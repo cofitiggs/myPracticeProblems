@@ -2,15 +2,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 class RomanToInt {
-    private final Map<Character, Integer> values = new HashMap<>(){{
-        put('I', 1);
-        put('V', 5);
-        put('X', 10);
-        put('L', 50);
-        put('C', 100);
-        put('D', 500);
-        put('M', 1000);
-    }};
+    private final Map<Character, Integer> values;
+
+    RomanToInt (){
+        values = new HashMap<>(){{
+            put('I', 1);
+            put('V', 5);
+            put('X', 10);
+            put('L', 50);
+            put('C', 100);
+            put('D', 500);
+            put('M', 1000);
+        }};
+    }
 
     public int romanToInt(String s) {
         int decNum = 0;
@@ -28,7 +32,7 @@ class RomanToInt {
             */
             for (int i=0; i<ch.length; i++){
                 /** i will go from 0-4 mirroring indices of array*/
-                if (i<ch.length-1){
+                if (i<ch.length-1) {
                 /**ch.length-1 = (5)-1 = 4 */
                     if (values.get(s.charAt(i)) < values.get(s.charAt(i+1))) {
                         decNum -= values.get(s.charAt(i));
