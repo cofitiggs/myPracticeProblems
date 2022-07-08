@@ -25,16 +25,14 @@ So, set should go as follows:
 
 """
 
-increment = 1
+current_number = 1
 total = 0
-while increment < 1000:
-	if increment%3==0:
-		total += increment
-	elif increment%5==0:
-		total += increment
+while current_number < 1000:
+	if current_number%3==0 or current_number%5==0:
+		total += current_number
 	else:
 		total
 
-	increment+=1
+	current_number+=1
 
 print(total)
