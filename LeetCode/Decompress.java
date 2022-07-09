@@ -9,8 +9,7 @@ class Decompress {
             if (i%2==0){
                 quantity = nums[i];
                 continue;
-            }
-            else{
+            } else {
                 for (int j=0; j<quantity; j++){
                     list.add(nums[i]);
                 }
@@ -22,7 +21,7 @@ class Decompress {
         for (int k=0; k<sol.length; k++){
             sol[k] = list.get(k);
         }
-        //return integer array
+
         return sol;
     }
 
