@@ -25,14 +25,7 @@ So, set should go as follows:
 
 """
 
-current_number = 1
-total = 0
-while current_number < 1000:
-	if current_number%3==0 or current_number%5==0:
-		total += current_number
-	else:
-		total
+def sum_of_multiples_under_1000():
+	return sum(num for num in range(1, 1000) if num%3==0 or num%5==0)
 
-	current_number+=1
-
-print(total)
+print(sum_of_multiples_under_1000())
