@@ -15,7 +15,6 @@ class Decompress {
                 }
             }
         }
-        //need integer array to retun for solution
         int size = list.size();
         int[] sol = new int[size];
         for (int k=0; k<sol.length; k++){
@@ -28,7 +27,8 @@ class Decompress {
     public static void main(String[] args) {
         Decompress test = new Decompress();
         int[] arr = {0,1,2,3,4,5};
-        int[] arr2 = {10,1};
         System.out.println(Arrays.toString(test.decompressRLElist(arr)));
+        int[] arr2 = {10,1};
+        System.out.println(Arrays.toString(test.decompressRLElist(arr2)));
     }
 }
